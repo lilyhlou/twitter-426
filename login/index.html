@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Login to COMP 426</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <div id="login">
+            <div id="login-card" class="login-card">
+                <div class="card-title">
+                    <h1>COMP 426 Login</h1>
+                </div>
+
+                <div class="content">
+                    <form id="login-form">
+                        <input id="email" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                        <input id="password" type="password" name="password" title="password" placeholder="Password" required>
+
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="homepage" class="hide">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                          <a class="navbar-item" href="/">
+                            <img src="https://discovertext.com/wp-content/uploads/2014/05/logo_twitter_withbird_1000_allblue32.png" alt="COMP 426 Twitter" height="58">
+                          </a>
+                      
+                          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                          </a>
+                        </div>
+                      </nav>
+            <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-three-fifths">
+                    <div class="writetweet"> 
+                        <textarea class="textarea" placeholder="Write your tweet here!"></textarea>
+                    <br>
+                    <button class="button" id="tweetbutton">Tweet</button><br>
+                    <br>
+                </div>
+            </div>
+            <div class="column"></div>
+
+            </div>
+        </div>
+
+        <!-- Include links to JavaScript files below -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+</html>

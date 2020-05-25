@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>COMP 426 Twitter</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <div id="homepage">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="https://discovertext.com/wp-content/uploads/2014/05/logo_twitter_withbird_1000_allblue32.png" alt="COMP 426 Twitter" height="58">
+                </a>   
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+            </nav>
+            <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-three-fifths">
+                    <div class="writetweet"> 
+                        <textarea class="textarea" placeholder="Write your tweet here!"></textarea>
+                    <br>
+                    <button class="button" id="tweetbutton">Tweet</button><br>
+                    <br>
+                </div>
+            </div>
+            <div class="column"></div>
+
+            </div>
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column is-three-fifths" id="loadtweets"></div>
+                <div class="column"></div>
+            </div>
+
+            
+
+        </div>
+
+             
+
+
+        <!-- Include links to JavaScript files below -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+        <script src="node_modules/axios/dist/axios.min.js"></script>
+        <script type="module" src="render.js"></script>
+
+    </body>
+</html>
